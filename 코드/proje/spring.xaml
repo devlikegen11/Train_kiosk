@@ -1,0 +1,43 @@
+﻿<Page x:Class="proje.spring"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:proje"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="450"
+      Title="spring">
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/back.png"/>
+    </Page.Background>
+
+    <Grid>
+        <Label Content="패키지 신청" HorizontalAlignment="Center" Height="58" VerticalAlignment="Top" Width="450" Background="#FF5285CC" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Content="뒤로가기" HorizontalAlignment="Left" Height="30" Margin="10,63,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_1" Background="#FFF1F1F1" FontSize="16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="32" Margin="182,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="money" Content="다  음" HorizontalAlignment="Center" Height="41" Margin="0,575,0,0" VerticalAlignment="Top" Width="390" Click="Button_Click" Background="#FFF6F6F6" FontSize="20" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="예약자명  |" HorizontalAlignment="Left" Height="32" Margin="72,167,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="주민번호  |" HorizontalAlignment="Left" Height="32" Margin="72,224,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="userlastnum" HorizontalAlignment="Left" Height="32" Margin="291,224,0,0" VerticalAlignment="Top" Width="85" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PreviewTextInput="userlastnum_PreviewTextInput"/>
+        <Label Content="-" HorizontalAlignment="Left" Height="32" Margin="269,224,0,0" VerticalAlignment="Top" Width="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        <TextBox x:Name="phonnum" HorizontalAlignment="Left" Height="32" Margin="182,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" TextChanged="TextBox_TextChanged" PreviewTextInput="phonnum_PreviewTextInput"/>
+        <Label Content="전화번호  |" HorizontalAlignment="Left" Height="32" Margin="72,283,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="userfirnum" HorizontalAlignment="Left" Height="32" Margin="183,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" TextChanged="TextBox_TextChanged" PreviewTextInput="userfirnum_PreviewTextInput" />
+        <TextBox x:Name="buynum" HorizontalAlignment="Left" Height="32" Margin="182,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" TextChanged="TextBox_TextChanged" PreviewTextInput="buynum_PreviewTextInput"/>
+        <Label Content="인   원  |" HorizontalAlignment="Left" Height="32" Margin="72,341,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="packname" HorizontalAlignment="Left" Height="32" Margin="182,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" TextChanged="TextBox_TextChanged"/>
+        <Label Content="패키지명  |" HorizontalAlignment="Left" Height="32" Margin="72,400,0,0" VerticalAlignment="Top" Width="111" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</Page>
